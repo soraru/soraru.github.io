@@ -18,6 +18,8 @@ h1 {
 	font-size: 32pt;}
 
 nav {
+	border: 0px solid;
+	border-radius: 10px;
 	margin: 10% auto;
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -29,8 +31,9 @@ ul {
 	margin: 0px; }
 
 li {
-    position: relative;
-    display: inline-block;
+	padding-bottom: 10px;
+	position: relative;
+	display: inline-block;
 	font-size: 12pt; }
 
 li > a {
@@ -47,29 +50,28 @@ li:hover > a {
 	color: #FDF6E3; }
 
 li > ul {
-    position: absolute;
-    box-sizing: border-box;
+	position: absolute;
+	box-sizing: border-box;
 	color: #FDF6E3;
 	background-color: #C3BBA1;
-    overflow: hidden;
-    width: 100%;
-    max-height: 0;
-    border: 0 solid #2aa198;
-    transition: all .5s;
-    z-index: 10; }
+	overflow: hidden;
+	width: 100%;
+	max-height: 0;
+	border: 0 solid #2aa198;
+	transition: all .5s;
+	z-index: 10; }
 
 li:hover > ul {
 	max-height: 500px;
 	border: 0px solid black;
-	transition: max-height 1s, border 1s;}
+	transition: max-height 1s, border 1s; }
 
 li > ul > li {
 	display: block; }
 
 .aa{
 	background: url("images/aa.png");
+	background-position: center;
 	background-color: #dcd6c6;
 	background-size: contain;
 	background-repeat: no-repeat; }
-
-
