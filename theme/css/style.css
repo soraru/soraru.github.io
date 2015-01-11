@@ -65,6 +65,9 @@ main article div.article_text {
 main article div.article_text a {
   text-decoration: underline;
 }
+main article div.article_text img {
+  width: 100%;
+}
 main article div.article_text code {
   margin: 2px;
   padding: 0;
