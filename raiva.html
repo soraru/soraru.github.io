@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel='stylesheet' type='text/css' href="/theme/css/style.css" />
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0"/>
-        <meta charset='utf-8'/>
-        <title>
-Raiva        </title>
-    </head>
-    <body>
-        <main>
-<article>
-    <h3>Raiva</h3>
-    <div id="cover">
-        <img id="cover" src="images/raiva.jpg">
+<html lang="pt">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sunbro">
+  <meta name="description" content="Postagens escritas por Sunbro">
+
+
+<meta name="keywords" content="">
+
+  <title>
+Raiva  </title>
+
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="/index.html">
+        <img src="/theme/images/logo.jpg" alt="meme-chan te ama">
+      </a>
+      <h2><a href="/index.html">Sunbro</a></h2>
+      <p>Acordei, peguei um pingado e vim escrever bosta aqui. Nada pode me parar agora, nem mesmo os pensamentos sujos que vocês tem.</p>
+      <ul>
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="/archives.html">Arquivo</a></li>
+        <li><a href="/pages/sobre.html">Sobre</a></li>
+        <li><a href="/pages/contato.html">Contato</a></li>
+        <li><a href="https://github.com/soraru" target="_blank">Github</a></li>
+        <li><a href="mailto:solaire@tfwno.gf" target="_blank">Email</a></li>
+      </ul>
     </div>
-    <div>
-        <p>Não sei direito o que é, mas eu tenho muita raiva, raiva não só do que está
+  </aside>
+
+  <main>
+<!--  <header>
+<p><a href="/index.html">Início</a> &#124; <a href="/archives.html">Arquivo</a></p>
+    </header> -->
+
+<article>
+  <div class="article_title">
+    <h3><a href="/raiva.html">Raiva</a></h3>
+  </div>
+  <img src="images/raiva.jpg">
+  <div class="article_text">
+    <p>Não sei direito o que é, mas eu tenho muita raiva, raiva não só do que está
 acontecendo ao meu redor, mas também comigo, principalmente comigo, devo
 acrescentar, sempre que não consigo fazer nada, começo a ficar nervoso, sinto
 meu coração disparar e, conforme não consigo resolver, a coisa dentro de mim
@@ -56,20 +93,36 @@ gerar um problema que nem faz sentido discutir, ainda irá desgastar a sua
 relação, a não ser que você e a pessoa não se deem bem e só conversem por
 obrigação, aí faz até um pouco de sentido quase riscar a faca no peito para
 mostrar quem é que manda e nunca mais conversar, mesmo que mudem com o tempo.</p>
-    </div>
+  </div>
+    
+  <div class="article_meta">
+    <p>Postado em 09/10/2014</p>
+  </div>
 
-    <div>
-        <p>Postado em 09/10/2014.</p>
-    </div>
+
 </article>
 
-            <footer>
-<nav>
-    <a href="/chuva.html">&larr; Postagem anterior</a>
-    <a href="/index.html">Início</a>
-    <a href="/tédio.html">Postagem posterior &rarr;</a>
-</nav>
-            </footer>
-        </main>
-    </body>
+    <footer>
+<div id="paginator">
+
+            <nav>
+                <a href="/chuva.html" class="button_accent">&larr; Postagem anterior</a>
+                <a href="/tédio.html" class="button_accent">Postagem posterior &rarr;</a>
+            </nav>
+</div>
+
+<script language="javascript">
+    function toggleComments() {
+        var commentDiv = document.getElementById("article_comments");
+        (commentDiv.style.display == "none") ? commentDiv.style.display = "block" : commentDiv.style.display = "none";
+        return false;
+    }
+</script>
+    </footer>
+
+    <div id="ending_message">
+      <p>Usando <a href="http://getpelican.com" target="_blank">Pelican</a>. Tema no <a href="https://github.com/soraru/pelican-svbhack" target="_blank">github</a>. .</p>
+    </div>
+  </main>
+</body>
 </html>
