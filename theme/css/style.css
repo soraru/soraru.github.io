@@ -1,182 +1,103 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #4d4d4d;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
+  background: url("/theme/images/bg.png") repeat;
+  color: #ffffe6;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1em;
 }
 a {
-  color: #000000;
+  color: #f69c9b;
   text-decoration: none;
 }
 hr {
-  color: #eeeeee;
-  background-color: #eeeeee;
-  height: 1px;
-  border: none;
+  border-top: 1px solid #8fcd9e;
+  height: 0;
 }
-aside div#user_meta {
-  padding: 40px;
-  text-align: center;
-}
-aside div#user_meta h2 {
-  margin: 15px 0 5px 0;
-}
-aside div#user_meta p {
-  margin: 0 0 15px 0;
-  font-size: 14px;
-}
-aside div#user_meta ul {
-  margin: 40px 0 0 0;
-  padding-left: 0;
-  font-size: 16px;
-  list-style-type: none;
-}
-aside div#user_meta ul li {
-  display: inline;
-  line-height: 3em;
-}
-aside div#user_meta ul li a {
-  padding: 5px 15px 5px 15px;
-  border: 3px solid #eeeeee;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  color: #999999;
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 main header {
-  padding: 40px;
-  border-top: #eeeeee 1px solid;
-  border-bottom: #eeeeee 1px solid;
+  padding-top: 1em;
 }
 main header p {
-  font-weight: bold;
-  font-size: 10px;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
   text-transform: uppercase;
 }
 main article {
-  max-width: 640px;
-  padding: 40px;
+  background: #212121;
+  max-width: 75%;
+  padding: 1em;
+  margin: 1em auto;
+  overflow: auto;
 }
-main article img {
+main article h3 {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+main article #cover {
+  padding-bottom: 10px;
   width: 100%;
 }
-main article div.article_text {
-  line-height: 1.375em;
+main article #cont-read {
+  text-align: right;
 }
-main article div.article_text a {
+main article p {
+  padding: 1px 10px 1px 10px;
+  font: 0.95em 'Droid Sans', sans-serif;
+  text-align: justify;
+}
+main article #post-list {
+  float: left;
+  width: 50%;
+}
+main article #page-list {
+  float: left;
+}
+main article ul li {
+  padding: 0.1em;
+}
+main article ul li a:hover {
   text-decoration: underline;
 }
-main article div.article_text code {
-  margin: 2px;
-  padding: 0;
-  color: #000000;
-  font-size: 14px;
-  font-family: 'PT Mono', monospace;
-  background: #eeeeee;
+main article pre {
+  margin: 5px;
+  padding: 1px;
+  color: #fff;
+  font-family: 'Droid Sans Mono', monospace;
 }
-main article div.article_text pre {
-  margin: 22px 2px 22px 2px;
-  padding: 2px;
-  color: #000000;
-  border-left: 3px solid #0e94ec;
-  font-size: 14px;
-  font-family: 'PT Mono', monospace;
-  background: #eeeeee;
-  line-height: 1.125em;
-  overflow-x: auto;
+main article .mona {
+  font-family: Mona, MS PGothic, Mincho, Gothic !important;
+  font-size: 2vmin;
+  border: 1px solid #8fcd9e;
 }
-main article div.article_text .mona {
-  font-family: Mona, MS\ PGothic, Mincho, Gothic !important;
-  border: 0.1em solid #eeeeee;
-  padding: 5px 15px 5px 15px;
-  border: 3px solid #eeeeee;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  color: #999999;
-}
-main article div.article_text .mona pre {
-  font-family: Mona, MS\ PGothic, Mincho, Gothic !important;
+main article .mona pre {
+  font-family: Mona, MS PGothic, Mincho, Gothic !important;
   margin: 0;
   padding: 0;
-  color: #999999;
-  border: none;
-  background: none;
 }
-main article div.article_text blockquote {
+main blockquote {
   margin: 22px 2px 22px 2px;
-  padding-left: 40px;
-  color: #999999;
+  padding-left: 10px;
+  color: #696969;
   font-style: italic;
 }
-main article div.gist {
-  line-height: .875em;
-}
-main article div.article_meta {
-  font-size: 12px;
-  color: #999999;
-}
 main footer {
-  border-top: #eeeeee 1px solid;
-  padding: 40px;
+  border-top: #8fcd9e 1px solid;
+  clear: both;
+  text-align: center;
 }
-main footer a.button_accent {
-  padding: 10px;
-  border: 2px solid #0e94ec;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  text-transform: uppercase;
-  color: #0e94ec;
-  font-size: 18px;
+main footer nav {
+  width: 100%;
+  margin: 1em auto;
 }
-main footer a.button_accent:hover {
-  color: #ffffff;
-  background-color: #0e94ec;
+main footer nav a {
+  padding: 0 10px 0 10px;
 }
-main footer a.button_accent:active {
-  color: #ffffff;
-  background-color: #0e94ec;
-}
-main div#ending_message {
-  border-top: #eeeeee 1px solid;
-  padding: 0 40px 0 40px;
-  color: #999999;
-  font-size: 10px;
-}
-@media screen and (min-width: 1024px) {
-  aside {
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-right: #eeeeee 1px solid;
-  }
-  aside h2 {
-    margin: 10px 0 0 0;
-  }
-  aside div#user_meta {
-    max-width: 192px;
-    text-align: right;
-  }
-  aside div#user_meta ul li {
-    display: block;
-  }
-  main {
-    width: 75%;
-    position: absolute;
-    top: 0;
-    left: 25%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  main article {
-    max-width: 640px;
-  }
-  main header {
-    border-top: 0;
-  }
+main footer nav a:hover {
+  text-decoration: underline;
 }
